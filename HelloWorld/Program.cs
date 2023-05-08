@@ -12,6 +12,8 @@ namespace HelloWorld
         {
             Console.WriteLine("HelloWorld");
             Console.WriteLine("Modified in remote main branch");
+            Console.WriteLine("Creating conflict from the remote");
+            
 
         }
     }
