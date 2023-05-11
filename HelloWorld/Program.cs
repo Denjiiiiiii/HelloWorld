@@ -6,20 +6,34 @@ using System.Threading.Tasks;
 
 namespace HelloWorld
 {
-    internal class Program
+     class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
-            Console.WriteLine("HelloWorld");
-            Console.WriteLine("Modified in remote main branch");
-<<<<<<< HEAD
-            Console.WriteLine("Modifying in local");
+            Console.WriteLine("Welcome to HelloWorld");    
+            //Console.WriteLine("HelloWorld");
+            //Console.WriteLine("Modified in remote main branch");
+            //Console.WriteLine("Creating conflict from the remote");
+            // Console.WriteLine("Modifying in local");
+            //object creation of human class
+            //className objectVariable=new ClassName();
+            Human human = new Human();
+            Console.WriteLine("Please enter your name");
+            human.name = Console.ReadLine();
+            Console.WriteLine("Please enter your height");
+            //string height = Console.ReadLine();
+            human.height = Convert.ToSingle(Console.ReadLine());
 
-=======
-            Console.WriteLine("Creating conflict from the remote");
-            
->>>>>>> e45b8d1bde9aaad42ce5ea4549e735defa555fba
+            Console.WriteLine("Please enter phone number");
+            //string phoneNumber = Console.ReadLine();
+            human.phoneNumber = Convert.ToInt64 (Console.ReadLine());
+            human.Talk();
+            human.HumanDetails();
+            Console.ReadLine();
+
 
         }
-    }
+     }
 }
+
+ 
